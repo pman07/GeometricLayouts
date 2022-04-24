@@ -19,3 +19,4 @@ C:\Users\Pierson\source\repos\GeometricLayouts\GeometricLayouts\obj\Debug\net6.0
 C:\Users\Pierson\source\repos\GeometricLayouts\GeometricLayouts\obj\Debug\net6.0\GeometricLayouts.pdb
 C:\Users\Pierson\source\repos\GeometricLayouts\GeometricLayouts\obj\Debug\net6.0\GeometricLayouts.genruntimeconfig.cache
 C:\Users\Pierson\source\repos\GeometricLayouts\GeometricLayouts\obj\Debug\net6.0\GeometricLayouts.csproj.AssemblyReference.cache
+C:\Users\Pierson\source\repos\GeometricLayouts\GeometricLayouts\bin\Debug\net6.0\GeometricLayouts.staticwebassets.runtime.json

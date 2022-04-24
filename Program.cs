@@ -1,10 +1,10 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseDefaultFiles();
+
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 
@@ -28,7 +28,7 @@ app.MapGet("/geometriclayout/rowcolumn/{row},{column}", (char row, int column) =
 });
 
 // API Method Get Triangle Row and Column from Coordinates
-app.MapGet("/geometriclayout/coordinates/{V1x},{V1y}/{V2x},{V2y}/{V3x},{V3y}", (int V1x, int V1y, int V2x, int V2y, int V3x, int V3y) =>
+app.MapGet("/geometriclayout/coordinates/{V1x},{V1y},{V2x},{V2y},{V3x},{V3y}", (int V1x, int V1y, int V2x, int V2y, int V3x, int V3y) =>
 {
     int rowInt = V3y / 10;
     char row = Convert.ToChar(rowInt + 64);
@@ -49,7 +49,7 @@ app.MapGet("/geometriclayout/coordinates/{V1x},{V1y}/{V2x},{V2y}/{V3x},{V3y}", (
 
 app.Run();
 
-internal record GeometricLayout(char row, int column, int V1x, int V1y, int V2x, int V2y, int V3x, int V3y)
+internal record GeometricLayout(char Row, int Column, int V1x, int V1y, int V2x, int V2y, int V3x, int V3y)
 {
     
 }
