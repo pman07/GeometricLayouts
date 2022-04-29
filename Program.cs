@@ -14,7 +14,7 @@ app.MapGet("/geometriclayout/rowcolumn/{row},{column}", (char row, int column) =
     int rowInt = (int)Convert.ToChar(row) - 64;  // Convert character to integer (A-F = 1-6) for calculations below
     var triangle = new GeometricLayout
        (
-            row,
+            row,  // Create record with row, column from user entry, calculated coordinates
             column,
             5 * (column - (column % 2)),
             (10 * rowInt) - (1 - (column % 2)) * 10,
@@ -24,7 +24,7 @@ app.MapGet("/geometriclayout/rowcolumn/{row},{column}", (char row, int column) =
             10 * rowInt
 
        );
-    return triangle;
+    return triangle;  // return record result
 });
 
 // API Method Get Triangle Row and Column from Coordinates
@@ -35,7 +35,7 @@ app.MapGet("/geometriclayout/coordinates/{V1x},{V1y},{V2x},{V2y},{V3x},{V3y}", (
     int column = (V1y / (10 * rowInt)) + 2 * (V1x / 10);
     var triangle = new GeometricLayout
        (
-           row,
+           row,  // Create record with coordinates from user entry, calculated row and column
            column,
            V1x,
            V1y,
@@ -44,7 +44,7 @@ app.MapGet("/geometriclayout/coordinates/{V1x},{V1y},{V2x},{V2y},{V3x},{V3y}", (
            V3x,
            V3y
        );
-    return triangle;
+    return triangle;  // return record result
 });
 
 app.Run();

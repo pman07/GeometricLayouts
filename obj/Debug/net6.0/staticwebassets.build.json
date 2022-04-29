@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xreN5QCk72mcUVBGTZg+YcglMC07ZazZ4O7ZyPhw4f8=",
+  "Hash": "7cfPhxmP9EcY51ORPI0NXTi5UZLbicZvr4gQLKy1FCY=",
   "Source": "GeometricLayouts",
   "BasePath": "_content/GeometricLayouts",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
-    },
-    {
-      "Identity": "C:\\Users\\Pierson\\source\\repos\\GeometricLayouts\\GeometricLayouts\\wwwroot\\logo.png",
-      "SourceId": "GeometricLayouts",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pierson\\source\\repos\\GeometricLayouts\\GeometricLayouts\\wwwroot\\",
-      "BasePath": "_content/GeometricLayouts",
-      "RelativePath": "logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }
